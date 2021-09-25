@@ -1,0 +1,87 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 18, 2021, 8:28:59 PM
+    Author     : Usuario
+*/
+
+.text {
+    font-family: 'Tomorrow', sans-serif;
+    font-weight: bolder;
+    font-size: 1.7em;
+    color: #FFC300;
+    position: relative;
+    text-align: center;
+}
+
+.galeria__adopcion {
+    position: absolute;
+    left: 100px; 
+}
+
+div.galeria {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.galeria:hover {
+  border: 1px solid #777;
+}
+
+div.galeria img {
+  width: 100%;
+  height: auto;
+}
+
+div.adopt {
+  padding: 15px;
+  text-align: center;
+}
+
+/* CSS PARA CUENTA PET  */
+
+.formulariopet {
+    width:400px;
+    background: #FFC300;
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 4px;
+    color: whitesmoke;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.formulariopet h5 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.petcasilla {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid#ffffff;
+    font-family: 'Tomorrow', sans-serif;
+}
+
+.formulariopet p {
+    height: 40px;
+    text-align: center;
+}
+
+.registropet {
+    width: 100%;
+    background-color: #177E25;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}

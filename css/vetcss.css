@@ -1,0 +1,43 @@
+label {
+  display: block;
+  margin: .5em 0 0 0;
+  font-weight: bold;
+}
+h4 {
+    text-align: center;
+}
+legend {
+   font-weight: bold;
+   font-size: 1em;
+   color: #0F1258;
+}
+
+input {
+	border-radius:4px;
+	background-color: #F0FAF8;
+}
+
+
+fieldset {
+	border: 3px solid #FFC300;
+}
+
+input[type=submit] {
+  background-color: #177E25;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+input[type=reset] {
+  background-color: #C67531;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
