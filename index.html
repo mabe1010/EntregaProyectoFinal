@@ -4,8 +4,6 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-
-
 <html>
     <head>
         <title>Mushu Pet - PetShop, Veterinaria y Adopciones</title>
@@ -22,7 +20,6 @@ and open the template in the editor.
         <link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
         <link rel="stylesheet" href="css\indexcss.css">
-        <link rel="stylesheet" href="css\adopcioncss.css">
         <link rel="stylesheet" href="css\sweetalert2.min.css">
        
     </head>
@@ -36,8 +33,8 @@ and open the template in the editor.
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">Inicio</a>
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -56,7 +53,7 @@ and open the template in the editor.
           <a class="dropdown-item" href="productogato.jsp">Para gatos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="Sucursal.jsp">Sucursales <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="Sucursal.jsp">Sucursales</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -64,7 +61,7 @@ and open the template in the editor.
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="cuentapet.jsp">Registrarme</a>
-          <a class="dropdown-item" href="login.jsp">Iniciar Sesion</a>
+          <a class="dropdown-item" href="login.jsp">Iniciar sesion</a>
       </li>
         <li class="nav-item dropdown">
             <i class="fas fa-cart-arrow-down fa-2x" style="color: dodgerblue" class="nav-link dropdown-toggle img-fluid" height="70px"
@@ -82,10 +79,11 @@ and open the template in the editor.
                         <tbody></tbody>
                     </table>
                     <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
-                    <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar Compra</a>
+                    <a href="procesocompra.jsp" id="procesar-pedido" class="btn btn-danger btn-block">Procesar Compra</a>
                 </div>
         </li>          
-    </ul>
+    </ul>    
+    </ul>    
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Buscar producto" aria-label="Search">
       <button class="btn btn btn-info my-2 my-sm-0" type="submit">Buscar</button>
@@ -95,32 +93,112 @@ and open the template in the editor.
          <br>
          <br>
          <br>
-        <!--informacion de sucursales -->
+        <!--imagen de portada -->
         <hr>
-        <p>Te invitamos a visitar nuestras sucursales ubicadas en Belgrano y Palermo, 
-        contamos con todas las marcas de alimento balanceado y una variedad de accesorios para tus mascotas</p>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+         <div class="carousel-inner">
+             <div class="carousel-item active">
+                 <img src="imagenes\1.jpg" class="d-block w-100" height="380" alt="ofertas pet shop">
+             </div>
+             <div class="carousel-item">
+                 <img src="imagenes\2.jpg" class="d-block w-100" height="380" alt="vacuna mascotas">
+             </div>
+             <div class="carousel-item">
+                 <img src="imagenes\3.jpg" class="d-block w-100" height="380" alt="accesorios">
+             </div>
+         </div>
+         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+             <span class="sr-only">Previous</span>
+         </a>
+         <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+             <span class="sr-only">Next</span>
+         </a>
+        </div>
         <hr>
+        <!-- Beneficio por ser usuario -->
+        <div class="card text-center" >
+             <div class="card-header text-white bg-info mb-3">
+                 Se parte de Mi cuenta pet y accede a beneficios exclusivos: 
+             </div>
+            <div class="card-body">
+                 <h5 class="card-title">Accede a 10% de descuento en tu próxima compra </h5>
+                 <p class="card-text">Registrate y recibe todas las promociones de Mushu Pet.</p>
+                 <a href="cuentapet.jsp" class="btn btn-info">Quiero registrarme</a>
+            </div>
+            <div class="card-footer text-white bg-info mb-3">
+                 Válido para compras online
+            </div>
+        </div>
+        <!-- informacion  productos-->
         <br>
-        <div class="iframe">
-           <table style="width:100%">
-  <tr>
-      <th><h6 class="text">Sucursal Belgrano</h6></th>
-    <th><h6 class="text">Sucursal Palermo</h6></th>
-  </tr>
-  <tr>
-    <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.728824266134!2d-58.45111777737436!3d-34.56042076469699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5cd83d90fbf%3A0x16fb722ca67a09c9!2s3%20de%20Febrero%202000%2C%20C1428AHD%20CABA!5e0!3m2!1ses!2sar!4v1626914654351!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen=""></iframe></td>
-    <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1642.4796477750115!2d-58.42475154197017!3d-34.57989648675692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb584b0a80091%3A0xafb72462e9308f1e!2sDarregueyra%202500%2C%20C1425FLE%20CABA!5e0!3m2!1ses!2sar!4v1626914579313!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen=""></iframe></td>
-  </tr>
-</table>
-            <br>
-            <br>
-            <h6>Ciudad Autonoma de Buenos Aires.</h6>
-            <h6>Lunes a Domingo: 9a 18hs</h6>
-            <h6>Veterinaria: solo con turno online. Solicita tu turno <a href="veterinaria.jsp">aqui</a></h6>
-            <br>
-            <br>
+        <h2 class="info"> NUESTROS FAVORITOS </h2>
+        <br>
+        <div class="carousel">
+            <div class="carousel__contenedor">
+                <button aria-label="Anterior" class="carousel__anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div class="carousel__lista">
+                    <div class="carousel__elemento">
+                        <img src="imagenes\promo1.jpg" alt="promo1">
+                        <p class="precio">Purina Dogui  2.7kg </p>
+                        <p class="precio"> <span class="desc">$ 1000</span>  $ 800 </p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="imagenes\promo2.jpg" alt="promo2">
+                        <p class="precio">Pet Class Alimento Humedo </p>
+                        <p class="precio"> $ 200 </p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="imagenes\promo3.jpg" alt="promo3">
+                        <p class="precio">Royal Canin Maxi Adulto 20kg </p>
+                        <p class="precio"> <span class="desc">$ 7690</span>  $ 6970 </p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="imagenes\promo4.jpg" alt="promo4">
+                        <p class="precio">Purina Cat Chow 15kg </p>
+                        <p class="precio"> $ 2692 </p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="imagenes\promo5.jpg" alt="promo5">
+                        <p class="precio"> Meow Mix 3kg </p>
+                        <p class="precio"> $ 1830 </p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="imagenes\promo6.jpg" alt="promo6">
+                        <p class="precio">Royal Canin Mini Puppy 7.5kg </p>
+                        <p class="precio"> $ 6925 </p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="imagenes\promo7.jpg" alt="promo7">
+                        <p class="precio">Royal Canin Kitten Seco 1kg </p>
+                        <p class="precio"> $ 600 </p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="imagenes\promo8.jpg" alt="promo8">
+                        <p class="precio">Bandeja sanitaria perros </p>
+                        <p class="precio"> <span class="desc">$ 4320</span>  $ 3916 </p>
+                    </div>
+                    <div class="carousel__elemento">
+                        <img src="imagenes\promo10.jpg" alt="promo10">
+                        <p class="precio">Cuna ajustable </p>
+                        <p class="precio"> <span class="desc">$ 2500</span>  $ 1100 </p>
+                    </div>
+                </div>
+                
+                <button aria-label="Siguiente" class="carousel__siguiente">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <div role="tablist" class="carousel__indicadores"></div>
+        </div>
+
         <!-- pie de pagina -->
-  <footer>
+        <footer>
   <img src="imagenes\logomp.png" width="120" height="60" alt="mushupet">
  
   <p>Consultas: Lunes a Domingo de 9 a 18hs. Feriados de 9 a 16hs.</p> 
