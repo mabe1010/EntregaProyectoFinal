@@ -167,7 +167,7 @@ class Carrito {
             })
         }
         else {
-            location.href = "procesocompra.jsp";
+            location.href = "procesocompra.html";
         }
     }
 

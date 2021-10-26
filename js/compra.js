@@ -24,7 +24,7 @@ function procesarCompra() {
             showConfirmButton: false,
             timer: 2000
         }).then(function () {
-            window.location = "productoperro.jsp";
+            window.location = "productoperro.html";
         });
     }
     
